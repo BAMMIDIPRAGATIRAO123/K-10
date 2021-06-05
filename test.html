@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<body>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label>Allergy</label>
+                <table class="table table-bordered" id="dynamic_field">  
+                    <tr>  
+                        <td><input type="text" name="allergy" id="allergy0" placeholder="Allergy" class="form-control name_list" /></td>  
+                        <td><button type="button" name="add" id="add" class="btn btn-success">Add More</button></td>  
+                    </tr>  
+                </table> 
+                <!-- The core Firebase JS SDK is always required and must be listed first -->
+                <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+                
+                <!-- TODO: Add SDKs for Firebase products that you want to use
+                    https://firebase.google.com/docs/web/setup#available-libraries -->
+                    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+                    
+                    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+                    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script> 
+                    <script>
+                        
+                        
+                        
+                        // Your web app's Firebase configuration
+                        var firebaseConfig = {
+                            apiKey: "AIzaSyCGPwnXTYBAYdF021MK6i2sxpIoQwRL89I",
+                            authDomain: "compile-anywhere.firebaseapp.com",
+                            databaseURL: "https://compile-anywhere.firebaseio.com/",
+                            projectId: "compile-anywhere",
+                            storageBucket: "compile-anywhere.appspot.com",
+                            messagingSenderId: "789656347079",
+                            appId: "1:789656347079:web:aed6a17db0a8858fb639e2",
+                            measurementId: "G-WEG618PR1X"
+                        };
+                        // Initialize Firebase
+                        firebase.initializeApp(firebaseConfig);
+                        firebase.analytics();
+                        
+                        var firestore = firebase.firestore();
+
+                        const usersRef = firestore.collection("test");
+                        
+                        var i =  {
+                            counter : 0,
+                            button_id : 0,
+                        }  
+                        
+                        $(document).ready(function(){  
+                            $('#add').click(function(){  
+                                i.counter++;  
+                                i.button_id = i.counter;
+                                console.log(i.counter);
+                                console.log(i.button_id);
+                                $('#dynamic_field').append('<tr id="row'+i.counter+'"><td><input type="text" name="allergy" id="allergy'+i.counter+'" placeholder="Allergy" class="form-control name_list" /></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');  
+                            });  
+                            console.log(i.counter);
+                            $(document).on('click', '.btn_remove', function(){  
+                                
+                                $('#'+"row"+i.button_id).remove();
+                                i.button_id--;
+                                i.counter--;  
+                                console.log(i.button_id);
+                                console.log(i.counter);
+                            });  
+                        });  
+                        
+                        var allergyList = [];
+                        var cou = i.counter;
+                        for (c = 0; c <= cou; c++) {
+                            var allergyField = document.getElementById("allergy" + c).value;
+                            allergyList.push(allergyField);
+                            AllergyString = JSON.stringify(allergyList)
+                        };
+
+                        usersRef
+                        .set({
+                            
+                        })
+                        
+                        // firebase.auth().createUserWithEmailAndPassword(data.email, passwords.password).then(function(user){setTimeout(function(){
+                        //     console.log('uid',user.user.uid);
+                        //     usersRef.doc(user.user.uid).set({
+                        //         'email': data.email, 'firstName': data.firstName, 
+                        //         'lastName': data.lastName, 'allergies': allergyList,
+                        //         'sex': data.sex, 'birthDate': firebase.firestore.Timestamp.fromDate(data.birthDate),
+                        //         'diabetesType': data.diabetesType, 'diabetesComplication': arrayComplications,
+                        //         'weight': data.weight, 'height': data.height, 'firstLogin': true,
+                        //     })}, 3000)
+                        // })
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>

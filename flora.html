@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLORIDA!!!!</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9168b027c9.js" crossorigin="anonymous"></script>
+    
+    <style>
+        .top{
+            background-color: #0183D2;
+            height: 40vw;
+            width: 98.6vw;
+        }
+        
+        nav{
+            position: absolute;
+            margin-top: 14vw;
+            margin-left: 4vw;
+            background-color: rgba(0, 0, 0, 0.1);
+            height: 10vh;
+            width: 90%;
+        }
+        
+        ul{
+            list-style-type: none;
+            display: flex;
+        }
+        
+        ul li{
+            margin-left:2.4vw;
+            margin-top: 2vh;
+            font-size: 1.6vw;
+            color: white;
+            font-weight: 800;
+        }
+        
+        ul li:hover{
+            color: darkmagenta;
+            cursor: pointer;
+        }
+        
+        .dropbtn{
+            color: white;
+            background-color: transparent;
+            font-size: 1.2vw;
+            height: 4vw;
+            width: 10vw;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            position: absolute;
+            display: none;
+            background-color: white;
+            margin-left: -4vw;
+            min-width: 13.6vw;
+            overflow-y: auto;
+            height: 30vh;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index:1;
+        }
+        
+        .dropdown-content a {
+            display: block;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none; 
+        }
+        
+        .name{
+            font-size: 6vw;
+            position: absolute;
+            color: white;
+            margin-top: 4vw;
+            margin-left: 23vw;
+        }
+        
+        .name:hover{
+            color: crimson;
+            cursor: pointer;
+        }
+        
+        .i1{
+            height: 10vw;
+            width: 18vw;
+            position: absolute;
+            border-radius: 3vw;
+            border: 2px solid crimson;
+            cursor: pointer;
+            margin-left: 2vw;
+            margin-top: 2vw;
+        }
+        
+        .i2{
+            height: 10vw;
+            width: 18vw;
+            position: absolute;
+            border-radius: 3vw;
+            border: 2px solid crimson;
+            cursor: pointer;
+            margin-left: 78vw;
+            margin-top: 2vw;
+        }
+        
+        .bottom{
+            margin-left: 10vw;
+            position: absolute;
+            margin-top: -6vw;
+            height: 200%;
+            width: 76vw;
+            background-color: rgba(245,245,245,0.2);
+        }
+        
+        img{
+            height: 30vw;
+            width: 70vw;
+            margin-top: 2vw;
+            margin-left: 2vw;
+        }
+        
+        table{
+            height: 20vw;
+            width: 54vw;
+            margin-left: 14vw;
+            margin-bottom: 4vw;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+        
+        .b td, .b th{
+            height: 2vw;
+            width: 4vw;
+            text-align: center;
+            background-color: #0183D2;
+            color: white;
+            font-size: 1.2vw;
+            font-weight: 400;
+            border: 1px solid white;
+        } 
+        
+        .b td:hover{
+            background-color: cornflowerblue;
+        }
+        
+        .ex{
+            height: 12vw;
+            width: 18vw;
+            display: flex;
+        }
+        
+        .extreme{
+            display: flex;
+            margin-left: -1vw;
+            float: left;
+        }
+        
+        .pagination {
+            display: inline-block;
+            margin-top: 6vw;
+            margin-left: 28vw;
+        }
+        
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        .pagination a.active {
+            background-color: #0183D2;
+            color: white;
+        }
+        
+        .pagination a:hover:not(.active) {background-color: #ddd;}
+        
+    </style>
+</head>
+<body>
+    <div class="top">
+        <img class="i1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTMki1axVRMehxhI2DsslHi628hYm8wM8AZUw&usqp=CAU">
+        <h1 class="name">GOLDEN BLOOM.</h1>
+        <img class="i2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTl74s-yDCdePkdGU5NANzLX2wJlDQgVz_J4g&usqp=CAU">
+        <nav>
+            <ul>
+                <li style="background-color: transparent;color:  white;height: 2vw;width: 14vw;font-size: 1.2vw;border-right: 2px solid white;">GOLDEN BLOOM</li>
+                <li style="background-color: transparent;color: white;height: 2vw;width: 14vw;font-size: 1.2vw;"><b>Botanic</b> Heaven!!!</li>
+                <div class="dropdown">
+                    <li class="dropbtn" >Home
+                        <div class="dropdown-content">
+                            <a href="#"> Gallery </a>
+                            <a href="#"> Library </a>
+                            <a href="#"> Grid Gallery </a>
+                            <a href="#"> Cobbles Gallery </a>
+                            <a href="#"> Assembly </a>
+                            <a href="#"> Library</a>
+                        </div>
+                    </li>
+                </div>
+                <div class="dropdown">
+                    <li class="dropbtn" >Gallery
+                        <div class="dropdown-content">
+                            <a href="#"> Postal Address </a>
+                            <a href="#"> Contact Number </a>
+                            <a href="#"> Fax Number </a>
+                            <a href="#"> E-mail Id </a>
+                            <a href="#"> Whatsapp Number </a>
+                            <a href="#"> Assembly </a>
+                        </div>
+                    </li>
+                </div>
+                <div class="dropdown">
+                    <li class="dropbtn" >Add to Cart
+                        <div class="dropdown-content">
+                            <a href="#"> Classic News </a>
+                            <a href="#"> Grid News </a>
+                            <a href="#"> Masonry News </a>
+                            <a href="#"> Modern News </a>
+                            <a href="#"> News Post Page </a>
+                            <a href="#"> Assembly </a>
+                        </div>
+                    </li>
+                </div>
+                <div class="dropdown">
+                    <li class="dropbtn" >Contact Us
+                        <div class="dropdown-content">
+                            <a href="#"> Postal Address </a>
+                            <a href="#"> Contact Number </a>
+                            <a href="#"> Fax Number </a>
+                            <a href="#"> E-mail Id </a>
+                            <a href="#"> Whatsapp Number </a>
+                            <a href="#"> Assembly </a>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <div class="bottom">
+        <h2 style="color: white;font-size: 3vw;margin-top: 1vw;margin-left: 2vw;">LET'S BEGIN....</h2>
+        <p style="margin-top: 2vw;margin-left:2vw;color: black;font-size: 2vw;font-style: italic;">Here is a Glance of one of nature's wonderful creations ..... FLORIDA!!!</p>
+        <span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTBI41soOo8G8SBPeOF3yEP8m7-g-jQVMiK2w&usqp=CAU">
+            <span>
+                <h2 style="margin-left: 2vw;">LOTUS</h2>
+                <p style="margin-left: 2vw;margin-right: 4vw;">Lotus plants are adapted to grow in the flood plains of slow-moving rivers and delta areas. Stands of lotus drop hundreds of thousands of seeds every year to the bottom of the pond. While some sprout immediately, and most are eaten by wildlife, the remaining seeds can remain dormant for an extensive period of time as the pond silts in and dries out. During flood conditions, sediments containing these seeds are broken open, and the dormant seeds rehydrate and begin a new lotus colony. </p>
+            </span>
+        </span>
+        <span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSxPLDVlVvLWOoJBx8u40sEX6bIKAHOPMkbbw&usqp=CAU">
+            <span>
+                <h2 style="margin-left: 2vw;">PINK ROSES</h2>
+                <p style="margin-left: 2vw;margin-right: 4vw;">Pink Rose is the first political LGBT association in Finland. It was formed during the 2004 Helsinki Pride by Jani Ryhänen, who is currently serving as president. The day the association formed, the second vice president of the Social Democratic Party of Finland and Minister of Labour, Tarja Filatov joined.</p>
+            </span>
+        </span>
+        <span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXCqcLU7EhLbmJMQ6HY0wQOIEUXbsxqqtvDA&usqp=CAU">
+            <span>
+                <h2 style="margin-left: 2vw;">PITUNIA</h2>
+                <p style="margin-left: 2vw;margin-right: 4vw;">Petunia is genus of 20 species[1] of flowering plants of South American origin. The popular flower of the same name derived its epithet from the French, which took the word petun, meaning "tobacco," from a Tupi–Guarani language. An annual, most of the varieties seen in gardens are hybrids (Petunia × atkinsiana, also known as Petunia × hybrida).</p>
+            </span>
+        </span>
+        <span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTnte2n0t_nbTvVFMTs8bL6bVWHkT7suBdhcg&usqp=CAU">
+            <span>
+                <h2 style="margin-left: 2vw;">ORIENTAL LILY</h2>
+                <p style="margin-left: 2vw;margin-right: 4vw;">Lilium (members of which are true lilies) is a genus of herbaceous flowering plants growing from bulbs, all with large prominent flowers. Lilies are a group of flowering plants which are important in culture and literature in much of the world. Most species are native to the temperate northern hemisphere, though their range extends into the northern subtropics. Many other plants have "lily" in their common name but are not related to true lilies.</p>
+            </span>
+        </span>
+        <span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQphpt-JeZr3UmqCD2Al-54yR-cziv-5JJ46g&usqp=CAU">
+            <span>
+                <h2 style="margin-left: 2vw;">BUTTERCUP</h2>
+                <p style="margin-left: 2vw;margin-right: 4vw;">Buttercups are a large genus of flowering plants called Ranunculus. It has yellow, shiny petals, and grows wild in many places. It is poisonous to eat for humans and cattle, but when dry the poison is not active.There are about 200 to 600 species in this one genus. They mostly have yellow or sometimes white flowers. Buttercups include a wide variety of flower types, grouped by a plant naming system in the genus Ranunculus. </p>
+            </span>
+        </span>
+        <span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRlDt_6UIgMiEkNDduzsMwq-PpEbCcfhIqZSQ&usqp=CAU">
+            <span>
+                <h2 style="margin-left: 2vw;">CALLA LILY</h2>
+                <p style="margin-left: 2vw;margin-right: 4vw;">Zantedeschia /ˌzæntɪˈdɛskiə/[4] is a genus of eight species of herbaceous, perennial, flowering plants in the family Araceae, native to southern Africa from South Africa north to Malawi. The genus has been introduced on all continents except Antarctica. Common names include arum lily for Z. aethiopica and calla and calla lily for Z. elliottiana and Z. rehmannii, although members of the genus are neither true lilies of Liliaceae, true Arums, nor true Callas (related genera in Araceae). </p>
+            </span>
+        </span>
+        <span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRzDKaf96kmS_pUNHA8-5ou7N4zNezvdF9ceA&usqp=CAU">
+            <span>
+                <h2 style="margin-left: 2vw;">ROSES</h2>
+                <p style="margin-left: 2vw;margin-right: 4vw;">rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears.[1] There are over three hundred species and tens of thousands of cultivars.[1] They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles.[1] Flowers vary in size and shape and are usually large and showy, in colours ranging from white through yellows and reds.[1] Most species are native to Asia, with smaller numbers native to Europe, North America, and northwestern Africa. </p>
+            </span>
+        </span>
+        <span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQhfzU75ge2q2FVZg_glupnjqO3K9ZyyOF5iA&usqp=CAU">
+            <span>
+                <h2 style="margin-left: 2vw;">TULIPS</h2>
+                <p style="margin-left: 2vw;margin-right: 4vw;">Tulips (Tulipa) form a genus of spring-blooming perennial herbaceous bulbiferous geophytes (having bulbs as storage organs). The flowers are usually large, showy and brightly colored, generally red, pink, yellow, or white (usually in warm colors). They often have a different colored blotch at the base of the tepals (petals and sepals, collectively), internally. Because of a degree of variability within the populations, and a long history of cultivation, classification has been complex and controversial. The tulip is a member of the lily family, Liliaceae, along with 14 other genera, where it is most closely related to Amana, Erythronium and Gagea in the tribe Lilieae. </p>
+            </span>
+        </span>
+        <br>
+        <br>
+        <br>
+        <h2 style="margin-left: 21vw;">CLICK HERE FOR MORE VISUALS... <a href="#">more!!!</a></h2>
+        <br>
+        <h2 style="margin-left: 22vw;">SELECT YOUR DATE FOR APPOINTMENT.</h2>
+        <br>
+        <b style="margin-left: 36vw;">AUGUST 2020</b>
+        <table class="b"> 
+            <tr>
+                <th>M</th>
+                <th>T</th>
+                <th>W</th>
+                <th>T</th>
+                <th>F</th>
+                <th>S</th>
+                <th>S</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <h2>SOME MORE HIGHLIGHTS...</h2>
+        <br>
+        <span class="extreme">
+            <img class="ex" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT9mAXsmsnNaXRR8kiHgdZ_oTXF64GShwFYeQ&usqp=CAU">
+            <img class="ex" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQN0GgxpePcXffjgjKfV2W4I7bhnc6IsV_F6A&usqp=CAU">
+            <img class="ex" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQpOjPb6hODqD7dr8cMii_VeBEaJPVtanlSJQ&usqp=CAU">
+            <img class="ex" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTak_q0blhmECkgdDOGfzkYlZXB9YFMe_zPBg&usqp=CAU">
+        </span>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a class="active" href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>          
+    </div>
+</body>
+<script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+</script>
+</html>

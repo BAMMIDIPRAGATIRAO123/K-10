@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLORIDA!!!!</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9168b027c9.js" crossorigin="anonymous"></script>
+    
+    <style>
+        .top{
+            background-color: #0183D2;
+            height: 40vw;
+            width: 98.6vw;
+        }
+        
+        nav{
+            position: absolute;
+            margin-top: 14vw;
+            margin-left: 4vw;
+            background-color: rgba(0, 0, 0, 0.1);
+            height: 10vh;
+            width: 90%;
+        }
+        
+        ul{
+            list-style-type: none;
+            display: flex;
+        }
+        
+        ul li{
+            margin-left:2.4vw;
+            margin-top: 2vh;
+            font-size: 1.6vw;
+            color: white;
+            font-weight: 800;
+        }
+        
+        ul li:hover{
+            color: darkmagenta;
+            cursor: pointer;
+        }
+        
+        .dropbtn{
+            color: white;
+            background-color: transparent;
+            font-size: 1.2vw;
+            height: 4vw;
+            width: 10vw;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            position: absolute;
+            display: none;
+            background-color: white;
+            margin-left: -4vw;
+            min-width: 13.6vw;
+            overflow-y: auto;
+            height: 30vh;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index:1;
+        }
+        
+        .dropdown-content a {
+            display: block;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none; 
+        }
+        
+        .name{
+            font-size: 6vw;
+            position: absolute;
+            color: white;
+            margin-top: 4vw;
+            margin-left: 23vw;
+        }
+        
+        .name:hover{
+            color: crimson;
+            cursor: pointer;
+        }
+        
+        .i1{
+            height: 10vw;
+            width: 18vw;
+            position: absolute;
+            border-radius: 3vw;
+            border: 2px solid crimson;
+            cursor: pointer;
+            margin-left: 2vw;
+            margin-top: 2vw;
+        }
+        
+        .i2{
+            height: 10vw;
+            width: 18vw;
+            position: absolute;
+            border-radius: 3vw;
+            border: 2px solid crimson;
+            cursor: pointer;
+            margin-left: 78vw;
+            margin-top: 2vw;
+        }
+        
+        .bottom{
+            margin-left: 10vw;
+            position: absolute;
+            margin-top: -6vw;
+            height: 200%;
+            width: 76vw;
+            background-color: rgba(245,245,245,0.2);
+        }
+        
+        img{
+            height: 30vw;
+            width: 70vw;
+            margin-top: 2vw;
+            margin-left: 2vw;
+        }
+        
+        table{
+            height: 20vw;
+            width: 54vw;
+            margin-left: 14vw;
+            margin-bottom: 4vw;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+        
+        .b td, .b th{
+            height: 2vw;
+            width: 4vw;
+            text-align: center;
+            background-color: #0183D2;
+            color: white;
+            font-size: 1.2vw;
+            font-weight: 400;
+            border: 1px solid white;
+        } 
+        
+        .b td:hover{
+            background-color: cornflowerblue;
+        }
+        
+        .ex{
+            height: 12vw;
+            width: 18vw;
+            display: flex;
+        }
+        
+        .extreme{
+            display: flex;
+            margin-left: -1vw;
+            float: left;
+        }
+        
+        .loc{
+            height: 36vw;
+            width: 72vw;
+            margin-left: 2vw;
+            margin-top: 2vw;
+        }
+
+        .det{
+            margin-top: 2vw;
+            margin-left: 2vw;
+            height: 90vw;
+            width: 40vw;
+        }
+
+        .abt{
+            position: absolute;
+
+            height: 90vw;
+            width: 27.2vw;
+            margin-top: -90vw;
+            margin-left: 46vw;
+        }
+
+        .me{
+            height: 16vw;
+            width: 26vw;
+            margin-top: 2vw;
+            margin-left: -0.2vw;
+        }
+
+        .bio{
+            margin-left: 2vw;
+            margin-top: 2vw;
+            color: #777777;
+            cursor: pointer;
+            font-weight: 800;
+        }
+
+        .had{
+            font-size: 1.2vw;
+            margin-top: 1vw;
+            margin-left: 2vw;
+        }
+        
+        input{
+            font-size: 1.2vw;
+            height: 6vh;
+            width: 30vw;
+            padding-left: 2vw;
+            margin-left: 2vw;
+            border-radius: 3vw;
+            border: 2px solid #777777;
+        }
+
+        .com{
+            margin-top: 1vw;
+            margin-left: 2vw;
+            padding-top: -12vw;
+            height: 25vw;
+            border-radius: 3vw;
+            border: 2px solid #777777;
+            width: 30vw;
+        }
+
+        .save{
+            color: white;
+            background-color: #0183D2;
+            height: 4vw;
+            font-size: 1.4vw;
+            border: 2px solid transparent;
+            width: 10vw;
+            margin-left: 4vw;
+            border-radius: 3vw;
+            margin-top: 1vw;
+        }
+
+        .save:hover{
+            background-color: cornflowerblue;
+            cursor: pointer;
+        }
+
+        i{
+            background-color: white;
+            color: #777777;
+            border-radius: 100%;
+            margin-left: 3vw;
+            margin-top: 1vw;
+            font-size: 2vw;
+        }
+
+        .fa-facebook:hover{
+            color: blue;
+            background-color: white;
+        }
+
+        .fa-google:hover{
+            color: green;
+            background-color: white;
+        }
+
+        .fa-linkedin:hover{
+            color: #0183D2;
+            background-color: white;
+        }
+
+        .fa-youtube:hover{
+            color: red;
+            background-color: white;
+        }
+
+        .foot{
+            position: absolute;
+            height: 12vw;
+            width: 78vw;
+            background-color: rgba(0, 0, 0, 0.4);
+            font-size: 2vw;
+            margin-top: 120vw;
+            margin-left: 10vw;
+            color: white;
+            display: flex;
+            float: left;
+        }
+
+        .box{
+            border-right: 2px solid white;
+            color: white;
+            font-size: 1.2vw;
+            padding-top: 2vw;
+            padding-left: 1vw;
+            padding-right: 1vw;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <img class="i1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTMki1axVRMehxhI2DsslHi628hYm8wM8AZUw&usqp=CAU">
+        <h1 class="name">GOLDEN BLOOM.</h1>
+        <img class="i2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTl74s-yDCdePkdGU5NANzLX2wJlDQgVz_J4g&usqp=CAU">
+        <nav>
+            <ul>
+                <li style="background-color: transparent;color:  white;height: 2vw;width: 14vw;font-size: 1.2vw;border-right: 2px solid white;">GOLDEN BLOOM</li>
+                <li style="background-color: transparent;color: white;height: 2vw;width: 14vw;font-size: 1.2vw;"><b>Botanic</b> Heaven!!!</li>
+                <div class="dropdown">
+                    <li class="dropbtn" >Home
+                        <div class="dropdown-content">
+                            <a href="#"> Gallery </a>
+                            <a href="#"> Library </a>
+                            <a href="#"> Grid Gallery </a>
+                            <a href="#"> Cobbles Gallery </a>
+                            <a href="#"> Assembly </a>
+                            <a href="#"> Library</a>
+                        </div>
+                    </li>
+                </div>
+                <div class="dropdown">
+                    <li class="dropbtn" >Gallery
+                        <div class="dropdown-content">
+                            <a href="#"> Postal Address </a>
+                            <a href="#"> Contact Number </a>
+                            <a href="#"> Fax Number </a>
+                            <a href="#"> E-mail Id </a>
+                            <a href="#"> Whatsapp Number </a>
+                            <a href="#"> Assembly </a>
+                        </div>
+                    </li>
+                </div>
+                <div class="dropdown">
+                    <li class="dropbtn" >Add to Cart
+                        <div class="dropdown-content">
+                            <a href="#"> Classic News </a>
+                            <a href="#"> Grid News </a>
+                            <a href="#"> Masonry News </a>
+                            <a href="#"> Modern News </a>
+                            <a href="#"> News Post Page </a>
+                            <a href="#"> Assembly </a>
+                        </div>
+                    </li>
+                </div>
+                <div class="dropdown">
+                    <li class="dropbtn" >Contact Us
+                        <div class="dropdown-content">
+                            <a href="#"> Postal Address </a>
+                            <a href="#"> Contact Number </a>
+                            <a href="#"> Fax Number </a>
+                            <a href="#"> E-mail Id </a>
+                            <a href="#"> Whatsapp Number </a>
+                            <a href="#"> Assembly </a>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <div class="bottom">
+        <h2 style="color: white;font-size: 3vw;margin-top: 1vw;margin-left: 2vw;">GALLERY....</h2>
+        <p style="margin-top: 2vw;margin-left:2vw;color: black;font-size: 2vw;font-style: italic;">Here is the way to find our <b>Botanic </b>Heaven!!!!</p>
+        <iframe class="loc" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236585.6868462812!2d82.09656502584237!3d22.101127851859342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a27e04aa9f7294b%3A0x9e8350cc0589a12e!2sChhattisgarh%20495006!5e0!3m2!1sen!2sin!4v1602606002380!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <br>
+        <br>
+        <div class="det">
+            <h2 class="bio">DETAILS...</h2>
+            <div class="matter">
+                <p class="had">Name:</p>
+                <input class="type" type="text" placeholder="NAME">
+            </div>
+            <div class="matter">
+                <p class="had">Email:</p>
+                <input class="type" type="text" placeholder="EMAIL ID">
+            </div>
+            <div class="matter">
+                <p class="had">Url:</p>
+                <input class="type" type="text" placeholder="IMAGE URL">
+            </div>
+            <div class="">
+                <h2 class="bio">COMMENTS</h2>
+                <input class="com" type="text"/>
+                <br>
+                <button class="save">save comment</button>
+            </div>
+        </div>
+        <div class="abt">
+            <h2 class="bio">ABOUT ME !</h2>
+            <img class="me" src="data:image/jpeg;base64,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">
+            <p>This is Pragati, please contact us by provided means in case of any difficulty caused to u or any query arrived.<br> Contact No. - 9994536712/9984756324</p>
+            <h2 class="bio">FOLLOW US ON...</h2>
+            <br>
+            <br>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a> 
+        </div>
+    </div>
+    <div class="foot">
+        <span class="box">GOLDEN BLOOM <br> BOTANIC HEAVEN!!! </span>
+        <span class="box">please contact us by provided means in case of any difficulty caused to u or any query arrived.</span>
+        <span class="box">Contact No. - 9994536712/9984756324 <br> location: h.no. 30 city park bilaspur.</span>
+    </div>
+</body>
+</html>
